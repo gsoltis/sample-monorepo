@@ -45,6 +45,7 @@ importers:
       '@types/react': 17.0.37
       eslint: 7.32.0
       eslint-config-custom: workspace:*
+      my-js-lib: workspace:*
       next: 12.0.8
       next-transpile-modules: 9.0.0
       react: 17.0.2
@@ -53,6 +54,7 @@ importers:
       typescript: ^4.5.3
       ui: workspace:*
     dependencies:
+      my-js-lib: link:../../packages/my-js-lib
       next: 12.0.8_sfoxds7t5ydpegc3knd667wn6m
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -83,6 +85,12 @@ importers:
       eslint-config-next: 12.1.6
       eslint-config-prettier: 8.5.0
       eslint-plugin-react: 7.28.0
+
+  packages/my-js-lib:
+    specifiers:
+      deep-ts-lib: workspace:*
+    dependencies:
+      deep-ts-lib: link:../deep-ts-lib
 
   packages/tsconfig:
     specifiers: {}

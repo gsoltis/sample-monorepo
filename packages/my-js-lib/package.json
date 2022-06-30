@@ -1,0 +1,13 @@
+{
+  "name": "my-js-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "deep-ts-lib": "workspace:*"
+  }
+}
